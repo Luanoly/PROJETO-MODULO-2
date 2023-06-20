@@ -1,6 +1,6 @@
 const tableBodyElement = document.querySelector('#userTable');
 
-fetch('https://randomuser.me/api/?nat=BR&results=5')
+fetch('https://randomuser.me/api/?nat=BR&results=15')
     .then(response => response.json())
     .then(data => {
         const users = data.results;
