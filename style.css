@@ -1,5 +1,10 @@
 body {
     background: rgb(135, 138, 138);
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    overflow: hidden;
+    position: relative;
 }
 
 table {
