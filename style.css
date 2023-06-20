@@ -1,3 +1,16 @@
 body {
     background: rgb(135, 138, 138);
 }
+
+table {
+    width: 100%;
+}
+
+th,
+td {
+    color: aliceblue;
+}
+
+img {
+    border-radius: 50%;
+}

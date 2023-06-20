@@ -8,13 +8,13 @@ fetch('http://localhost:5000/aluno')
             const row = document.createElement('tr');
             const nome = document.createElement('td');
             const data_nascimento = document.createElement('td');
-            const email_institucional = document.createElement('td')
             const matricula = document.createElement('td');
+            const cpf = document.createElement('td');
 
             nome.textContent = user;
             data_nascimento.textContent = user;
-            email_institucional.textContent = user;
             matricula.textContent = user;
+            cpf.textContent = user;
 
             row.appendChild(nome);
             row.appendChild(data_nascimento);
