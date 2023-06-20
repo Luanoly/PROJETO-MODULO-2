@@ -25,3 +25,9 @@ img {
     height: auto;
     vertical-align: middle;
 }
+
+button {
+    background-color: rgb(49, 49, 49);
+    color: rgb(184, 97, 97);
+    border-radius: 12px;
+}
