@@ -4,11 +4,16 @@ body {
 
 table {
     width: 100%;
+    margin-top: -6px;
+    font-size: larger;
+    line-height: normal;
 }
 
-th,
-td {
+th, td {
     color: aliceblue;
+    background-color: rgb(71, 70, 70);
+    padding:.2em.4em!important;
+    text-align: center;
 }
 
 img {
