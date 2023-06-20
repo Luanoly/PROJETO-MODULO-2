@@ -23,4 +23,6 @@ th, td {
 
 img {
     border-radius: 50%;
+    height: auto;
+    vertical-align: middle;
 }

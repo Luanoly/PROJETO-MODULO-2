@@ -1,6 +1,6 @@
 const tableBodyElement = document.querySelector('#userTable');
 
-fetch('https://randomuser.me/api/?nat=BR&results=1')
+fetch('https://randomuser.me/api/?nat=BR&results=5')
     .then(response => response.json())
     .then(data => {
         const users = data.results;
@@ -10,12 +10,15 @@ fetch('https://randomuser.me/api/?nat=BR&results=1')
             const cidade = document.createElement('td');
             const email = document.createElement('td');
             const celular = document.createElement('td');
+            const foto = document.createElement('img');
 
             nome.textContent = user.name.first;
             cidade.textContent = user.location.city;
             email.textContent = user.email;
             celular.textContent = user.phone;
+            foto.src = user.picture.large;
 
+            row.appendChild(foto);
             row.appendChild(nome);
             row.appendChild(cidade);
             row.appendChild(email);
