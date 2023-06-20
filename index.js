@@ -1,7 +1,14 @@
 const tableBodyElement = document.querySelector('#userTable');
 
-fetch('https://randomuser.me/api/?nat=BR&results=15&seed=SL&page=1')
+let botao = document.getElementById('botao1');
+let tabela = document.getElementById('userTable');
+
+botao.addEventListener('click', function(){
+
+    fetch('https://randomuser.me/api/?nat=BR&results=15&seed=SL&page=1')
+
     .then(response => response.json())
+
     .then(data => {
         const users = data.results;
         users.forEach(user => {
@@ -29,3 +36,6 @@ fetch('https://randomuser.me/api/?nat=BR&results=15&seed=SL&page=1')
     .catch(error => {
         console.log('Ocorreu um erro:', error);
     });
+
+});
+
