@@ -1,29 +1,25 @@
-const tableBodyElemnt = document.querySelector('#userTable');
+const tableBodyElement = document.querySelector('#userTable');
 
-fetch('http://localhost:5000/alunos')
+fetch('https://randomuser.me/api/?nat=BR&results=1')
     .then(response => response.json())
     .then(data => {
-        const users = data;
+        const users = data.results;
         users.forEach(user => {
             const row = document.createElement('tr');
             const nome = document.createElement('td');
-            const data_nascimento = document.createElement('td');
-            const matricula = document.createElement('td');
+            const cidade = document.createElement('td');
+            const email = document.createElement('td');
 
-            nome.textContent = user;
-            data_nascimento.textContent = user;
-            matricula.textContent = user;
+            nome.textContent = user.name.first;
+            cidade.textContent = user.location.city;
+            email.textContent = user.email;
 
             row.appendChild(nome);
-            row.appendChild(data_nascimento);
-            row.appendChild(matricula);
-            tableBodyElemnt.appendChild(row);
-
-            async function mostrar() {
-                const response = await
-                    fetch('https://randomuser.me/api');
-                const jsonData = await response.json();
-                console.log(jsonData);
-            }
+            row.appendChild(cidade);
+            row.appendChild(email);
+            tableBodyElement.appendChild(row);
         });
     })
+    .catch(error => {
+        console.log('Ocorreu um erro:', error);
+    });
