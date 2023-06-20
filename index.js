@@ -18,8 +18,8 @@ fetch('http://localhost:5000/aluno')
 
             row.appendChild(nome);
             row.appendChild(data_nascimento);
-            row.appendChild(email_institucional);
             row.appendChild(matricula);
+            row.appendChild(cpf);
 
             tableBodyElemnt.appendChild(row);
         });
