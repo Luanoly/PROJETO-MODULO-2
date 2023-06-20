@@ -1,6 +1,6 @@
 const tableBodyElemnt = document.querySelector('#userTable');
 
-fetch('http://localhost:5000/aluno')
+fetch('http://localhost:5000/alunos')
     .then(response => response.json())
     .then(data => {
         const users = data;
