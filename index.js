@@ -4,7 +4,7 @@ let botao = document.getElementById('botao1');
 
 botao.addEventListener('click', function(){
 
-    fetch('https://randomuser.me/api/?nat=BR&results=5&seed=SL&page=1')
+    fetch('https://randomuser.me/api/?nat=BR&results=15&seed=SL&page=1')
 
     .then(response => response.json())
 
@@ -44,7 +44,7 @@ let botao2 = document.getElementById('botao2');
 
 botao2.addEventListener('click', function(){
 
-    fetch('https://randomuser.me/api/?nat=BR&results=5&seed=SL&page=2')
+    fetch('https://randomuser.me/api/?nat=BR&results=15&seed=SL&page=22')
 
     .then(response => response.json())
 
@@ -84,7 +84,7 @@ let botao3 = document.getElementById('botao3');
 
 botao3.addEventListener('click', function(){
 
-    fetch('https://randomuser.me/api/?nat=BR&results=5&seed=SL&page=3')
+    fetch('https://randomuser.me/api/?nat=BR&results=15&seed=SL&page=33')
 
     .then(response => response.json())
 
@@ -124,7 +124,7 @@ let botao4 = document.getElementById('botao4');
 
 botao4.addEventListener('click', function(){
 
-    fetch('https://randomuser.me/api/?nat=BR&results=5&seed=SL&page=4')
+    fetch('https://randomuser.me/api/?nat=BR&results=15&seed=SL&page=4')
 
     .then(response => response.json())
 
@@ -164,7 +164,7 @@ let botao5 = document.getElementById('botao5');
 
 botao5.addEventListener('click', function(){
 
-    fetch('https://randomuser.me/api/?nat=BR&results=5&seed=SL&page=5')
+    fetch('https://randomuser.me/api/?nat=BR&results=15&seed=SL&page=5')
 
     .then(response => response.json())
 
@@ -204,7 +204,7 @@ let botao6 = document.getElementById('botao6');
 
 botao6.addEventListener('click', function(){
 
-    fetch('https://randomuser.me/api/?nat=BR&results=5&seed=SL&page=7')
+    fetch('https://randomuser.me/api/?nat=BR&results=15&seed=SL&page=7')
 
     .then(response => response.json())
 
