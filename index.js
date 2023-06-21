@@ -230,6 +230,7 @@ botao6.addEventListener('click', function(){
             row.appendChild(email);
             row.appendChild(celular);
             tableBodyElement.appendChild(row);
+            
         });
     })
     .catch(error => {
