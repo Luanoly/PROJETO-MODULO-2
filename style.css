@@ -27,7 +27,16 @@ img {
 }
 
 button {
-    background-color: rgb(49, 49, 49);
+    background-color: rgb(63, 62, 62);
     color: rgb(184, 97, 97);
-    border-radius: 12px;
+    border-radius: 22px;
+    font: bold 22px/24px arial, helvetica, sans-aerif;	
+    padding:0px;
+    text-decoration: none;
+    text-align:center;	
+    color:#ccc;
+    width:220px;  
+    height:54px;	
+    display:block;	
 }
+
