@@ -32,6 +32,7 @@ botao.addEventListener('click', function(){
             tableBodyElement.appendChild(row);
         });
     })
+
     .catch(error => {
         console.log('Ocorreu um erro:', error);
     });
@@ -45,7 +46,7 @@ let botao2 = document.getElementById('botao2');
 botao2.addEventListener('click', function(){
 
     fetch('https://randomuser.me/api/?nat=BR&results=15&seed=SL&page=22')
-
+  
     .then(response => response.json())
 
     .then(data => {
