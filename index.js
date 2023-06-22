@@ -298,5 +298,6 @@ botao6.addEventListener('click', function () {
             console.log('Ocorreu um erro:', error);
         });
 
-});
+}); 
+
 
