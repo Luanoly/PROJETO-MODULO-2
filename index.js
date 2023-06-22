@@ -10,6 +10,16 @@ botao.addEventListener('click', function () {
 
         .then(data => {
             const users = data.results;
+            tableBodyElement.innerHTML =
+             `  <thead>
+                <tr>
+                    <th>imagem</th>
+                    <th>Nome</th>
+                    <th>Cidade</th>
+                    <th>E-mail</th>
+                    <th>Celular</th>
+                </tr>
+                </thead>`;
             users.forEach(user => {
                 const row = document.createElement('tr');
                 const nome = document.createElement('td');
@@ -151,6 +161,16 @@ botao4.addEventListener('click', function () {
 
         .then(data => {
             const users = data.results;
+            tableBodyElement.innerHTML =
+             `  <thead>
+                <tr>
+                    <th>imagem</th>
+                    <th>Nome</th>
+                    <th>Cidade</th>
+                    <th>E-mail</th>
+                    <th>Celular</th>
+                </tr>
+                </thead>`;
             users.forEach(user => {
                 const row = document.createElement('tr');
                 const nome = document.createElement('td');
@@ -191,6 +211,16 @@ botao5.addEventListener('click', function () {
 
         .then(data => {
             const users = data.results;
+            tableBodyElement.innerHTML =
+             `  <thead>
+                <tr>
+                    <th>imagem</th>
+                    <th>Nome</th>
+                    <th>Cidade</th>
+                    <th>E-mail</th>
+                    <th>Celular</th>
+                </tr>
+                </thead>`;
             users.forEach(user => {
                 const row = document.createElement('tr');
                 const nome = document.createElement('td');
@@ -231,6 +261,16 @@ botao6.addEventListener('click', function () {
 
         .then(data => {
             const users = data.results;
+            tableBodyElement.innerHTML =
+             `  <thead>
+                <tr>
+                    <th>imagem</th>
+                    <th>Nome</th>
+                    <th>Cidade</th>
+                    <th>E-mail</th>
+                    <th>Celular</th>
+                </tr>
+                </thead>`;
             users.forEach(user => {
                 const row = document.createElement('tr');
                 const nome = document.createElement('td');
